@@ -2,7 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - entry point
+ * main - A program that will assign a random number
+ *
+ * Description: Greater than 5, less than 6, or 0.
+ *
  * return: 0
  */
 int main(void)
