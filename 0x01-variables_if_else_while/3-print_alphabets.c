@@ -5,22 +5,21 @@
  */
 int main(void)
 {
-	char c;
+	int b = 97;
 
-	char d;
+	int a;
 
-	c = 'a';
-	d = 'A';
-	while
-		(c <= 'z') {
-			putchar(c);
-			c++;
-		}
-	while
-		(d <= 'z') {
-			putchar(d);
-			d++;
-		}
+	while (b <= 122)
+	{
+		putchar(b);
+		b++;
+	}
+	a = 65;
+	while (a <= 90)
+	{
+		putchar(a);
+		a++;
+	}
 	putchar('\n');
 	return (0);
 }
