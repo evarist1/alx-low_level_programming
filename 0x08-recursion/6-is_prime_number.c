@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * check_prime _ check if number is prime
+ * check_prime - function that returns 1 if the input integer is a prime
  * @n: the number to be checked
  * @i: the iteration times
- * Return: 1 for  prime and 0 for composite
+ * Return: 1 for  prime, 0 for composite
  */
 
 int check_prime(int n, int i)
