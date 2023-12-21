@@ -75,6 +75,7 @@ shash_table_t *shash_table_create(unsigned long int size)
  *
  * Return: 1 if it succeeded, 0 otherwise
  */
+int shash_table_set(shash_table_t *ht, const char *key, const char *value);
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index = 0;
@@ -110,7 +111,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	}
 	keycopy = strdup(key);
 
-        if (!keycopy)
+	if (!keycopy)
 	return (0);
 
 	new_node->key = keycopy;
@@ -176,8 +177,10 @@ void shash_table_print(const shash_table_t *ht)
 /**
  * shash_table_print_rev - function to print the key:value from ht in reverse
  * @ht: pointer to hash table
+ *
  */
 void shash_table_print_rev(const shash_table_t *ht)
+
 {
 	shash_node_t *bucket;
 	int not_fin = 0;
